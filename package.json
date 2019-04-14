@@ -7,7 +7,7 @@
     "oapi3codegen": "./bin/oapi3codegen.js"
   },
   "scripts": {
-    "prepare": "if [ ! \"$OAPI3CODEGEN_PREPARED\" = \"yes\" ]\nthen\n export OAPI3CODEGEN_PREPARED=\"yes\" && npm install\nfi",
+    "prepare": "npm install",
     "start": "node ./dist/cli.js",
     "build": "tsc",
     "build:start": "tsc && node ./dist/cli.js",
